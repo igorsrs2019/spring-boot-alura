@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.alura.forum.controller.dto.TopicoDto;
-
+import br.com.alura.forum.controller.form.TopicoForm;
 import br.com.alura.forum.modelo.Topico;
 import br.com.alura.forum.repository.TopicoRepository;
 

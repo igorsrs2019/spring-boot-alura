@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.alura.forum.controller.dto.TopicoDto;
 import br.com.alura.forum.modelo.Curso;
+import br.com.alura.forum.modelo.Pessoa;
 import br.com.alura.forum.modelo.Topico;
 import br.com.alura.forum.repository.TopicoRepository;
 
@@ -23,17 +24,8 @@ public class TopicosController {
 	private TopicoRepository topicoRepository;
 	
 	
-	@RequestMapping("/topicos")
-	@ResponseBody
-	public List<TopicoDto> lista(String nomeCurso){
-		if (nomeCurso ==null) {
-			List<Topico> topicos = topicoRepository.findAll();
-			return TopicoDto.converter(topicos);
-		} else {
-		
-			List<Topico> topicos = topicoRepository.findByCursoNome(nomeCurso);
-			return TopicoDto.converter(topicos);
-		}
-		
+
+	
+
 	}
-}
+

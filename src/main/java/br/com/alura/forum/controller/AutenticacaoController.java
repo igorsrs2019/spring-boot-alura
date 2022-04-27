@@ -1,6 +1,6 @@
 package br.com.alura.forum.controller;
 
-import javax.naming.AuthenticationException;
+//import javax.naming.AuthenticationException;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
